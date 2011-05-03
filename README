@@ -1,6 +1,8 @@
 -----
 GUARD  
------  
+-----
+  
+Guard watches files and runs a command after a file is modified. This allows you to automatically run tests in the background, restart your development server, reload the browser, and more.
 
 Its tedious to run rake command every single time we change file and if we get large code, you have to wait for entire thing to finish even if you just changed one file. 
 
