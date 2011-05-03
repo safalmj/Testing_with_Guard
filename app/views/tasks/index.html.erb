@@ -1,0 +1,13 @@
+<h1>Tasks Manager</h1>
+
+<p>My project to explore 'Guard'.
+Guard is a tool for automating the running of specs.</p>
+
+<h3> Task List  </h3>
+<ul>        
+	<% @tasks.each do |task|%>
+	<li><%= task.name %> </li>             
+	<% end %>
+</ul>  
+
+<div><%= link_to "Add new Task", new_task_path %></div>

@@ -1,0 +1,14 @@
+-----
+GUARD  
+-----  
+
+Its tedious to run rake command every single time we change file and if we get large code, you have to wait for entire thing to finish even if you just changed one file. 
+
+GUARD automates the running of spec.
+Its a generic way to listen to file modification and then perform some kind of action on that. 	 
+
+https://github.com/guard/guard-rspec
+
+~ Safal M Joshi [3 May 2011]
+RailsCast # 264  
+
