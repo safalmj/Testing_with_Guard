@@ -14,11 +14,12 @@ Its a generic way to listen to file modification and then perform some kind of a
 https://github.com/guard/guard-rspec
 
  
+                                     
 
+-----------
+SimpleCov 
+-----------  
 
-																							-----------
-																						   SimpleCov 
-																						  -----------
 ~ [5 May 2011] 
 {RailsCast # 252} 
 
@@ -26,8 +27,9 @@ SimpleCov is a code coverage analysis tool for Ruby 1.9.
 
 https://github.com/colszowka/simplecov-html
                                                 
-Basic usage :   
------------
+ .............
+: Basic usage :   
+ .............
 
 gem 'simplecov', '>= 0.4.0', :require => false, :group => :test
 
@@ -36,7 +38,32 @@ Then, add the following to your test/test_helper.rb (right at the top, line 00) 
   require 'simplecov'
   SimpleCov.start
                     
+ ........
+: TO OPEN :    
+ ........          
+Run the rspec first then a file is created inside 'coverage' folder. To open this file :
 
-TO RUN
------
- > open coverage/index.html
+ > open coverage/index.html   
+
+
+--------------------
+ Rail_best_Practices  
+----------------------
+
+rails_best_practices is a code metric tool to check the quality of rails codes.
+I highly recommend you browse the Rails Best Practices website first.
+      http://rails-bestpractices.com    
+
+> gem install rails_best_practices 
+ 
+ ........
+: TO RUN :
+ ........
+ > rails_best_practices -f html --with-textmate
+
+This generates the file called 'rails_best_practices_output.html'.   To open this file :
+> open rails_best_practices_output.html
+ 
+
+
+
