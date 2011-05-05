@@ -1,6 +1,8 @@
------
-GUARD  
------
+																								-----
+																								GUARD  
+																								-----  
+~ Safal M Joshi [3 May 2011]
+{RailsCast # 264}
   
 Guard watches files and runs a command after a file is modified. This allows you to automatically run tests in the background, restart your development server, reload the browser, and more.
 
@@ -11,6 +13,30 @@ Its a generic way to listen to file modification and then perform some kind of a
 
 https://github.com/guard/guard-rspec
 
-~ Safal M Joshi [3 May 2011]
-RailsCast # 264  
+ 
 
+
+																							-----------
+																						   SimpleCov 
+																						  -----------
+~ [5 May 2011] 
+{RailsCast # 252} 
+
+SimpleCov is a code coverage analysis tool for Ruby 1.9.  
+
+https://github.com/colszowka/simplecov-html
+                                                
+Basic usage :   
+-----------
+
+gem 'simplecov', '>= 0.4.0', :require => false, :group => :test
+
+Then, add the following to your test/test_helper.rb (right at the top, line 00) or spec_helper.rb or cucumber env.rb or whatever test framework you prefer, really - just make sure simplecov is loaded and started BEFORE your app code is loaded:
+
+  require 'simplecov'
+  SimpleCov.start
+                    
+
+TO RUN
+-----
+ > open coverage/index.html

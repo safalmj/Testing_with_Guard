@@ -33,5 +33,6 @@ group :development, :test do
   gem 'launchy' 
   gem 'database_cleaner' 
   gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
-  gem 'guard-rspec' 
+  gem 'guard-rspec'  
+  gem 'simplecov', '>=0.4.0', :require => false  
 end
